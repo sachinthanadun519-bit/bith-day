@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100609">
+<title>For Lili ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap');
+:root{--bg:#100609;--wine:#4b0d20;--red:#c52c50;--rose:#f1a0b1;--cream:#fff0e8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 50% 15%,#3a0b1a 0,#190811 42%,#090508 100%);color:var(--cream);font-family:Montserrat,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.28'/%3E%3C/svg%3E");z-index:5}
+main{position:relative;z-index:2}
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:70px 22px 55px;position:relative}
+.eyebrow{letter-spacing:.35em;text-transform:uppercase;font-size:.65rem;color:#e9a0b1}
+h1{font-family:'Great Vibes',cursive;font-size:clamp(4.5rem,17vw,9.5rem);font-weight:400;line-height:.95;margin:22px 0 8px;color:#ffe5e8;text-shadow:0 0 24px #d52d5b66,0 0 70px #b21c4555}
+.subtitle{font-family:'Cormorant Garamond',serif;font-size:clamp(1.2rem,4vw,1.8rem);font-style:italic;color:#f3c6ce;margin:12px 0 30px}
+.heart-orbit{width:155px;height:155px;border:1px solid #d45a77aa;border-radius:50%;display:grid;place-items:center;margin:10px auto 25px;box-shadow:0 0 55px #d51e4a22,inset 0 0 35px #d51e4a22;animation:pulse 3s infinite}
+.heart{font-size:4.2rem;filter:drop-shadow(0 0 18px #f04470);animation:heartbeat 1.5s infinite}
+@keyframes heartbeat{0%,100%{transform:scale(1)}15%{transform:scale(1.16)}30%{transform:scale(1)}45%{transform:scale(1.1)}}
+@keyframes pulse{50%{box-shadow:0 0 75px #d51e4a44,inset 0 0 45px #d51e4a33}}
+button{font:500 .72rem Montserrat,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#fff1f2;background:linear-gradient(135deg,#a8173d,#5c1028);border:1px solid #e77c96;border-radius:999px;padding:15px 25px;cursor:pointer;box-shadow:0 8px 30px #a8173d44;transition:.25s}
+button:hover{transform:translateY(-3px);box-shadow:0 12px 35px #d52d5b66}
+.scroll{position:absolute;bottom:24px;font-size:.62rem;letter-spacing:.25em;color:#bd8290;text-transform:uppercase;animation:float 2.5s infinite}
+@keyframes float{50%{transform:translateY(7px)}}
+section{padding:90px 22px;max-width:900px;margin:auto;text-align:center}
+.kicker{color:#d77b91;letter-spacing:.3em;text-transform:uppercase;font-size:.62rem}
+h2{font:500 clamp(2.3rem,8vw,4rem) 'Cormorant Garamond',serif;margin:12px 0 22px;color:#ffe3e7}
+p{line-height:1.9;color:#e6cbd0;font-size:.93rem}
+.letter-wrap{max-width:620px;margin:35px auto 0;perspective:1000px}
+.envelope{height:220px;position:relative;background:linear-gradient(145deg,#6b1830,#310c1b);border:1px solid #b95770;border-radius:8px;display:grid;place-items:center;overflow:hidden;box-shadow:0 18px 60px #0008}
+.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(35deg,transparent 49.7%,#9e3b57 50%,transparent 50.5%),linear-gradient(-35deg,transparent 49.7%,#9e3b57 50%,transparent 50.5%);opacity:.55}
+.seal{position:relative;width:65px;height:65px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#f5a6b8,#9d1538 70%);font-size:1.8rem;box-shadow:0 4px 20px #0008}
+.letter{display:none;text-align:left;background:#fff0e8;color:#4a1725;padding:32px 28px;border-radius:5px;box-shadow:0 20px 60px #0008;animation:reveal .8s ease}
+.letter.show{display:block}
+.letter h3{font:2.5rem 'Great Vibes',cursive;color:#9d173b;margin:0 0 15px}
+.letter p{color:#5c3340;font-family:'Cormorant Garamond',serif;font-size:1.22rem;line-height:1.7}
+@keyframes reveal{from{opacity:0;transform:translateY(20px) rotateX(-8deg)}to{opacity:1;transform:none}}
+.hidden{display:none!important}
+.cake{margin:38px auto 20px;width:190px;height:155px;position:relative}
+.cake-base{position:absolute;bottom:0;width:190px;height:90px;border-radius:12px 12px 20px 20px;background:linear-gradient(90deg,#65152d,#b52d4f,#65152d);box-shadow:0 18px 35px #0008}
+.cake-base:before{content:"";position:absolute;top:0;left:0;width:100%;height:24px;border-radius:12px;background:#f6c5cd;box-shadow:inset 0 -5px #d97b91}
+.cake-base:after{content:"";position:absolute;top:24px;left:0;width:100%;height:9px;background:#f3d8d2}
+.candle{position:absolute;bottom:88px;left:88px;width:14px;height:42px;background:repeating-linear-gradient(45deg,#fff0e8 0 5px,#bd3152 5px 10px);border-radius:3px}
+.flame{position:absolute;bottom:130px;left:88px;width:15px;height:22px;background:radial-gradient(ellipse at 50% 70%,#fff8b0 0 20%,#ff9a32 45%,#ed3d35 75%);border-radius:50% 50% 45% 45%;filter:drop-shadow(0 0 12px #ff8d35);animation:flicker .18s infinite alternate;transform-origin:bottom}
+@keyframes flicker{to{transform:rotate(5deg) scale(.9)}}
+.cake.out .flame{display:none}
+.footer{padding:45px 20px 65px;text-align:center;color:#a97884;font-size:.7rem;letter-spacing:.12em}
+.petal{position:fixed;top:-30px;z-index:1;pointer-events:none;animation:fall linear forwards;opacity:.8}
+@keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(650deg);opacity:0}}
+.spark{position:absolute;width:4px;height:4px;border-radius:50%;background:#ffd6df;box-shadow:0 0 12px #ff7c9b;animation:twinkle 2s infinite alternate}
+@keyframes twinkle{to{opacity:.15;transform:scale(.4)}}
+#typed{min-height:95px}
+.music-note{font-size:.65rem;color:#bd8290;margin-top:14px}
+@media(min-width:700px){section{padding:110px 30px}.letter{padding:42px 50px}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero" id="home">
+    <div class="eyebrow">A little universe made just for you</div>
+    <div class="heart-orbit"><div class="heart">♥</div></div>
+    <h1>Happy Birthday,<br>My Lili</h1>
+    <div class="subtitle">You make my world softer, brighter, and beautiful.</div>
+    <button id="begin">Open your little surprise ♥</button>
+    <div class="music-note">A tiny birthday moment, made with love</div>
+    <div class="scroll">Scroll for a little more magic ↓</div>
+  </header>
+
+  <section id="letter-section">
+    <div class="kicker">A message from my heart</div>
+    <h2>For my favourite person</h2>
+    <p>Some people make ordinary days feel extraordinary. You are that person in my life, Lili.</p>
+    <div class="letter-wrap">
+      <div class="envelope" id="envelope"><div class="seal">♥</div></div>
+      <button id="open-letter" style="margin-top:22px">Open my letter</button>
+      <article class="letter" id="letter">
+        <h3>My dearest Lili,</h3>
+        <p>Happy Birthday, my love. I hope today brings you the same warmth and happiness that you bring into my life every single day.</p>
+        <p>May your dreams find their way to you, may your smile never fade, and may this new chapter be filled with beautiful little moments. If I could make one wish for you, it would be that you always see yourself through my eyes — wonderful, precious, and so deeply loved.</p>
+        <p>Thank you for being you. No matter how many birthdays come and go, I will always be grateful that this world brought me to you.</p>
+        <p style="font-family:'Great Vibes',cursive;font-size:2rem;color:#9d173b">All my love, always. ♥</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="wish">
+    <div class="kicker">Make a wish</div>
+    <h2>One candle. A thousand wishes.</h2>
+    <p>Close your eyes, make a beautiful wish, and tap the button when you're ready.</p>
+    <div class="cake" id="cake"><div class="flame"></div><div class="candle"></div><div class="cake-base"></div></div>
+    <button id="blow">Blow out the candle ✨</button>
+    <p id="wish-message" class="hidden" style="color:#f3a4b7;font-family:'Cormorant Garamond',serif;font-size:1.5rem">May every beautiful thing find you, Lili. ♥</p>
+  </section>
+
+  <section>
+    <div class="kicker">Before you go</div>
+    <h2>My wish for you</h2>
+    <p id="typed"></p>
+    <p style="font-family:'Great Vibes',cursive;font-size:2.7rem;color:#f2a0b4;margin-top:28px">Happy Birthday, Lili ♥</p>
+    <button id="again">Feel the magic again</button>
+  </section>
+</main>
+<footer class="footer">MADE WITH LOVE, JUST FOR LILI <span style="color:#d84b70">♥</span></footer>
+<script>
+const begin=document.getElementById('begin');
+begin.addEventListener('click',()=>{document.getElementById('letter-section').scrollIntoView({behavior:'smooth'});burstHearts();});
+document.getElementById('open-letter').addEventListener('click',()=>{
+ document.getElementById('envelope').classList.add('hidden');
+ document.getElementById('open-letter').classList.add('hidden');
+ document.getElementById('letter').classList.add('show');burstHearts();
+});
+document.getElementById('blow').addEventListener('click',()=>{
+ document.getElementById('cake').classList.add('out');
+ document.getElementById('wish-message').classList.remove('hidden');
+ document.getElementById('blow').textContent='Wish sent into the universe ♥';
+ burstHearts(35);
+});
+const message="I hope life is gentle with your heart. I hope you laugh until your cheeks hurt, discover places that take your breath away, and find a thousand reasons to feel proud of yourself. And whenever life feels a little heavy, remember that you are cherished more than words can say. Keep shining, my Lili. The world is lovelier with you in it.";
+let typed=false;
+const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)&&!typed){typed=true;let i=0;const el=document.getElementById('typed');const timer=setInterval(()=>{el.textContent+=message[i++]||'';if(i>=message.length)clearInterval(timer)},28)}},{threshold:.3});
+observer.observe(document.getElementById('typed'));
+function petal(){const p=document.createElement('div');p.className='petal';p.textContent=['🌹','♥','🌸'][Math.floor(Math.random()*3)];p.style.left=Math.random()*100+'vw';p.style.fontSize=(12+Math.random()*15)+'px';p.style.setProperty('--drift',(Math.random()*180-90)+'px');p.style.animationDuration=(7+Math.random()*7)+'s';document.body.appendChild(p);setTimeout(()=>p.remove(),15000)}
+setInterval(petal,850);
+function burstHearts(n=18){for(let i=0;i<n;i++){setTimeout(()=>{const p=document.createElement('div');p.className='petal';p.textContent='♥';p.style.left=(35+Math.random()*30)+'vw';p.style.fontSize=(16+Math.random()*20)+'px';p.style.color='#ff7194';p.style.setProperty('--drift',(Math.random()*300-150)+'px');p.style.animationDuration=(3+Math.random()*2)+'s';document.body.appendChild(p);setTimeout(()=>p.remove(),6000)},i*45)}}
+document.getElementById('again').addEventListener('click',()=>{window.scrollTo({top:0,behavior:'smooth'});burstHearts(30)});
+for(let i=0;i<24;i++){const s=document.createElement('i');s.className='spark';s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';s.style.animationDelay=Math.random()*3+'s';s.style.opacity=Math.random();document.body.appendChild(s)}
+</script>
+</body>
+</html>
